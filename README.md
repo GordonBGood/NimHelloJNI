@@ -2,7 +2,7 @@ Nim Hello JNI
 =============
 Nim Hello JNI is an Android sample that uses JNI to call C code from a Android Java Activity, with the C code generated from the Nim computer language instead of directly from C source files.
 
-This has been adapted from [sample hello-jni android project](https://github.com/android/ndk-samples/tree/master/hello-jni)
+This has been adapted from [sample hello-jni android project](https://github.com/android/ndk-samples/tree/master/hello-jni) bye by translating the C file, NimHelloJNI/app/src/main/cpp/hello-jni.c to a Nim source file, NimHelloJNI/app/src/main/cpp/hello-jni.nim.
 
 The changes have been to add the required .nim files, adding nim biuld script files (.cmd for windows and sh for linux), changing to using ndk-build instead of CMake, and adding an Android.mk file to do the native code building.
 

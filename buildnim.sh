@@ -2,6 +2,14 @@
 
 # the androidNDK define as used below turns on the ability so that echo text is
 # output to the Android Logcat logging facilities, which could be handy in assisting debugging...
+
+# remove all the results of older bulid's...
+rm -f -d -r app/src/main/cpp/arm
+rm -f -d -r app/src/main/cpp/arm64
+rm -f -d -r app/src/main/cpp/x86
+rm -f -d -r app/src/main/cpp/x86_64
+
+# compile for each of the ANDROID_ABI's...
 nim c -c -d:noSignalHandler -d:danger -d:release -d:androidNDK \
 --cpu:arm --os:android --noMain:on \
 --nimcache:app/src/main/cpp/arm app/src/main/nim/hello_jni
