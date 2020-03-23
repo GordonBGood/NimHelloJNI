@@ -1,0 +1,15 @@
+{"compile":[
+["D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_system.nim.c", "clang.exe -c  -w -O3  -IC:\\nim-1.0.6\\lib -ID:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_system.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_system.nim.c"],
+["D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_times.nim.c", "clang.exe -c  -w -O3  -IC:\\nim-1.0.6\\lib -ID:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_times.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_times.nim.c"],
+["D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_os.nim.c", "clang.exe -c  -w -O3  -IC:\\nim-1.0.6\\lib -ID:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_os.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_os.nim.c"],
+["D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\@mjni_wrapper.nim.c", "clang.exe -c  -w -O3  -IC:\\nim-1.0.6\\lib -ID:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\@mjni_wrapper.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\@mjni_wrapper.nim.c"],
+["D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\@mhello_jni.nim.c", "clang.exe -c  -w -O3  -IC:\\nim-1.0.6\\lib -ID:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\@mhello_jni.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\@mhello_jni.nim.c"]],
+"link":[
+"D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_system.nim.c.o",
+"D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_times.nim.c.o",
+"D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_os.nim.c.o",
+"D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\@mjni_wrapper.nim.c.o",
+"D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\@mhello_jni.nim.c.o"
+],
+"linkcmd": "clang.exe   -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim\\hello_jni  D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_system.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_times.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\stdlib_os.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\@mjni_wrapper.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86_64\\@mhello_jni.nim.c.o  -lm   -ldl"
+}
