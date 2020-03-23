@@ -30,6 +30,8 @@ Getting Started
 1. The above involves generating a signing store and key (one time), which can be done almost automatically with Android Studio.
 1. You could store the signing store key file in this directory.
 
+There is a prebuilt signed (with a generated signing key not provided) APK installation file available in the `app/release` directory that can by installed (side-loaded) on Android smartphones if one trusts that it's contents reflect the source provided here; if one doesn't trust it, generate a new one as described by the alternate process described above.
+
 Screenshots
 -----------
 ![screenshot](screenshot.png)
