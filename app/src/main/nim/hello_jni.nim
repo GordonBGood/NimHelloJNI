@@ -1,4 +1,9 @@
 # example of native Nim code callable through JNI...
+#
+#    (c) Copyright 2020 W. Gordon Goodsman (GordonBGood)
+#
+#    See the file "copying.txt", included at the root of
+#    this project, for details about the copyright.
 
 #[ compile with a `cmd`/`sh` script as follows:
   nim c -c -d:noSignalHandler -d:danger -d:release --cpu:arm --os:android --noMain:on --nimcache:./arm native_jni
