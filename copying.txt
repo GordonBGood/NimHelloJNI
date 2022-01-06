@@ -4,7 +4,7 @@ NIMHelloJNI - an Android example converted to use Nim as a source of native code
 Files not copyrighted to Andreas Rumpf (Nim files) or to The Android Open Source Project
   are copyrighted as follows:
 
-Copyright (C) 2020 W. Gordon Goodsman (GordonBGood). All rights reserved.
+Copyright (C) 2022 W. Gordon Goodsman (GordonBGood). All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
