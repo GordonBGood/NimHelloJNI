@@ -17,18 +17,19 @@ Pre-requisites
 Getting Started
 ---------------
 1. [Install Nim](https://nim-lang.org/install.html) for your platform.
-1. [Download Android Studio](https://developer.android.com/sdk/index.html)
-1. Install Android Studio as per the instructions.
-1. Launch Android Studio.
-1. Open *Tools/SDK Manager* and be sure the Android 10.0 (Q) SDK Platform, 29.0.2 SDK Build tools and NDK (Side by side) are installed.
-1. Download this repository as a .zip file and extract it to a location of your choice.
-1. Open that project location with Android Studio to open the project.
-1. From the Android Studio terminal run "buildnim.cmd" (for Windows) or "buildnim.sh" (for Linux/OSX) to compile the Nim files to .c files.
-1. Click *Tools/Android/Sync Project with Gradle Files*.
-1. Click *Run/Run 'app'*.
-1. Alternatively, you can use "Build/Generate Signed Bundle/APK..." to generate an APK file that can be transfered to an Android phone and "side-loaded".
-1. The above involves generating a signing store and key (one time), which can be done almost automatically with Android Studio.
-1. You could store the signing store key file in this directory.
+3. [Download Android Studio](https://developer.android.com/sdk/index.html)
+4. Install Android Studio as per the instructions.
+5. Launch Android Studio.
+6. Open *Tools>SDK Manager* and be sure the Android 12.0 (S) SDK Platform, version 31.0.0 SDK Build tools and NDK (Side by side latest sub version of 23) are installed.
+7. Download this repository as a .zip file and extract it to a location of your choice.
+8. Open that project location with Android Studio to open the project.
+9. Note that the "nimbase.h" and "comping.txt" files in the "app/main/src/cpp" subfolder need to be updated to those from whatever version of the Nim compiler you are using (version 1.6.2 as the latest stable in this case) as from the Nim "lib" sub directory and the main Nim directory, respectively.
+10. From the Android Studio terminal run "buildnim.cmd" (for Windows) or "buildnim.sh" (for Linux/OSX) to compile the Nim files to .c files.
+11. Click *Files>Sync Project with Gradle Files*.
+12. Click *Run/Run 'app'*.
+13. Alternatively (and likely better for direct use), you can use "Build>Generate Signed Bundle/APK..." to generate an APK file that can be transfered to an Android phone and "side-loaded", giveing permission to do this from an unknown source.
+14. The above involves generating a signing store and key store file (one time), which can be done almost automatically with Android Studio.
+15. You could store the signing store key file in the mail directory of this project for ready use when the file is recompiled, but you likely don't want to publicize the key store file if you make a GitHub repository, as I have not done here.
 
 There is a prebuilt signed (with a generated signing key not provided) APK installation file available in the `app/release` directory that can by installed (side-loaded) on Android smartphones if one trusts that it's contents reflect the source provided here; if one doesn't trust it, generate a new one as described by the alternate process described above.
 
