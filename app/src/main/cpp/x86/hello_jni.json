@@ -1,15 +1,46 @@
-{"compile":[
-["D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_system.nim.c", "clang.exe -c  -w -O3  -IC:\\nim-1.0.6\\lib -ID:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_system.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_system.nim.c"],
-["D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_times.nim.c", "clang.exe -c  -w -O3  -IC:\\nim-1.0.6\\lib -ID:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_times.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_times.nim.c"],
-["D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_os.nim.c", "clang.exe -c  -w -O3  -IC:\\nim-1.0.6\\lib -ID:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_os.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_os.nim.c"],
-["D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\@mjni_wrapper.nim.c", "clang.exe -c  -w -O3  -IC:\\nim-1.0.6\\lib -ID:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\@mjni_wrapper.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\@mjni_wrapper.nim.c"],
-["D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\@mhello_jni.nim.c", "clang.exe -c  -w -O3  -IC:\\nim-1.0.6\\lib -ID:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\@mhello_jni.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\@mhello_jni.nim.c"]],
-"link":[
-"D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_system.nim.c.o",
-"D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_times.nim.c.o",
-"D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_os.nim.c.o",
-"D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\@mjni_wrapper.nim.c.o",
-"D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\@mhello_jni.nim.c.o"
-],
-"linkcmd": "clang.exe   -o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\nim\\hello_jni  D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_system.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_times.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\stdlib_os.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\@mjni_wrapper.nim.c.o D:\\AndroidStudioProjects\\NimHelloJNI\\app\\src\\main\\cpp\\x86\\@mhello_jni.nim.c.o  -lm   -ldl"
+{
+  "cacheVersion": "D20210525T193831",
+  "outputFile": "/home/hh128/dev/NimHelloJNI/app/src/main/nim/hello_jni",
+  "compile": [
+    [
+      "/home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_system.nim.c",
+      "clang -c  -w -ferror-limit=3 -O3   -I/home/hh128/.choosenim/toolchains/nim-1.6.6/lib -I/home/hh128/dev/NimHelloJNI/app/src/main/nim -o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_system.nim.c.o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_system.nim.c"
+    ],
+    [
+      "/home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_times.nim.c",
+      "clang -c  -w -ferror-limit=3 -O3   -I/home/hh128/.choosenim/toolchains/nim-1.6.6/lib -I/home/hh128/dev/NimHelloJNI/app/src/main/nim -o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_times.nim.c.o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_times.nim.c"
+    ],
+    [
+      "/home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_os.nim.c",
+      "clang -c  -w -ferror-limit=3 -O3   -I/home/hh128/.choosenim/toolchains/nim-1.6.6/lib -I/home/hh128/dev/NimHelloJNI/app/src/main/nim -o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_os.nim.c.o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_os.nim.c"
+    ],
+    [
+      "/home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/@mjni_wrapper.nim.c",
+      "clang -c  -w -ferror-limit=3 -O3   -I/home/hh128/.choosenim/toolchains/nim-1.6.6/lib -I/home/hh128/dev/NimHelloJNI/app/src/main/nim -o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/@mjni_wrapper.nim.c.o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/@mjni_wrapper.nim.c"
+    ],
+    [
+      "/home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/@mhello_jni.nim.c",
+      "clang -c  -w -ferror-limit=3 -O3   -I/home/hh128/.choosenim/toolchains/nim-1.6.6/lib -I/home/hh128/dev/NimHelloJNI/app/src/main/nim -o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/@mhello_jni.nim.c.o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/@mhello_jni.nim.c"
+    ]
+  ],
+  "link": [
+    "/home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_system.nim.c.o",
+    "/home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_times.nim.c.o",
+    "/home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_os.nim.c.o",
+    "/home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/@mjni_wrapper.nim.c.o",
+    "/home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/@mhello_jni.nim.c.o"
+  ],
+  "linkcmd": "clang   -o /home/hh128/dev/NimHelloJNI/app/src/main/nim/hello_jni /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_system.nim.c.o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_times.nim.c.o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/stdlib_os.nim.c.o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/@mjni_wrapper.nim.c.o /home/hh128/dev/NimHelloJNI/app/src/main/cpp/x86/@mhello_jni.nim.c.o  -lm -lm   -ldl",
+  "extraCmds": [],
+  "configFiles": [
+    "/home/hh128/.choosenim/toolchains/nim-1.6.6/config/nim.cfg",
+    "/home/hh128/.choosenim/toolchains/nim-1.6.6/config/config.nims"
+  ],
+  "stdinInput": false,
+  "projectIsCmd": false,
+  "cmdInput": "",
+  "currentDir": "/home/hh128/dev/NimHelloJNI",
+  "cmdline": "",
+  "depfiles": [],
+  "nimexe": ""
 }

@@ -1,4 +1,5 @@
-Nim Hello JNI
+Nim Hello JNI \
+[简体中文](README.zh.md)
 =============
 Nim Hello JNI is an Android sample that uses JNI to call C code from a Android Java Activity, with the C code generated from the Nim computer language instead of directly from C source files.
 
