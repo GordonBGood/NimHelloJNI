@@ -34,6 +34,53 @@ Getting Started
 
 There is a prebuilt signed (with a generated signing key not provided) APK installation file available in the `app/release` directory that can by installed (side-loaded) on Android smartphones if one trusts that it's contents reflect the source provided here; if one doesn't trust it, generate a new one as described by the alternate process described above.
 
+Command Line
+------------
+
+You may want to install only the android studio command line tools for easier scripting.
+
+*Installation*
+```sh
+## install nim
+
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+
+# android command line tools
+
+mkdir -p ~/android/cmdline-tools # the tools expect this structure
+
+# if needed replace 'linux' with 'mac' or 'windows' (run in wsl)
+curl $(curl -s https://developer.android.com/studio | grep -o "https://.*commandlinetools-linux.*_latest.zip") | jar xv && chmod +x cmdline-tools/bin/* && mv cmdline-tools android/cmdline-tools/tools
+
+export PATH=$HOME/android/cmdline-tools/tools/bin:$PATH
+
+# android packages (possibly find newer versions with sdkmanager --list)
+yes | sdkmanager --install build-tools\;35.0.0
+yes | sdkmanager --install platform-tools
+yes | sdkmanager --install ndk\;27.2.12479018
+
+*Build*
+
+```sh
+# clone repository
+git clone https://github.com/GordonBGood/NimHelloJNI.git
+cd NimHelloJNI
+
+# add nim header
+cp $HOME/.choosenim/toolchains/nim-2.2.0/lib/nimbase.h app/src/main
+
+# Compile nim code to C
+sh buildnim.sh
+
+# Build apk package
+gradle
+
+# install apk to android device
+ls app/release/app-release.apk
+
+```
+
+
 Screenshots
 -----------
 ![screenshot](screenshot.png)
